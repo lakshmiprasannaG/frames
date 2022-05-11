@@ -1,6 +1,8 @@
 const fs = require('fs');
 
-const border = () => 'border:2em solid black;';
+const randomNum = () => Math.floor(Math.random() * 255);
+
+const border = () => 'border:2em solid rgb('+randomNum() +','+ randomNum()+',' + randomNum() + ');';
 const width = () => 'width:25em;';
 const height = () => 'height:25em;';
 
