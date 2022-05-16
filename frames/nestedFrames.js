@@ -28,7 +28,7 @@ const main = function (size) {
   const box = createBox(size);
   const generateBody = link() + generateTag('body', box);
   const generateHtml = generateTag('html', generateBody);
-  fs.writeFileSync('frames.html', generateHtml, 'utf8');
+  fs.writeFileSync('index.html', generateHtml, 'utf8');
 };
 
 main(process.argv[2]);
