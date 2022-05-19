@@ -1,14 +1,14 @@
 #! /bin/bash
 
-x=10;
+size=20;
 
-node nestedFrames.js $x;
+node nestedFrames.js $size;
 open index.html;
 
-while (( $x < 60 ))
+while (( $size < 50 ))
 do
- x=$(( $x + 1 ))
- node nestedFrames.js $x;
+ size=$(( $size + 1 ))
+ node nestedFrames.js $size;
 done
 
-node nestedFrames.js $x $(($x + 1))
+node nestedFrames.js $size $(($size + 1))
