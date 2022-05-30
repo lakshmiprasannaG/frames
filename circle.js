@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const randomNum = (x) => Math.floor(Math.random() * x);
+const randomNum = (number) => Math.floor(Math.random() * number);
 
 class Style {
   constructor() {
@@ -66,6 +66,7 @@ class RGB {
 
 const smallCircle = () => {
   const color = new RGB(randomNum(255), randomNum(255), randomNum(255));
+  // eslint-disable-next-line id-length
   const point = { x: randomNum(1500), y: randomNum(800) };
   const radius = randomNum(80);
 
